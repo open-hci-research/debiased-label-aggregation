@@ -1,0 +1,9 @@
+{
+"dataset_file": "data/sketchy_fall2019_peekvotes_fmt_final.tsv",
+"weight_user_votes": false,
+"skip_singleton_votes": true,
+"xgboost_params": {"n_estimators": 500, "max_depth": 10},
+"force_preprocessing": true,
+"feature_selection": true,
+"eq3": false
+}

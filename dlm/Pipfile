@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+numpy = "*"
+keras = "*"
+sklearn = "*"
+imblearn = "*"
+dill = "*"
+xgboost = "*"
+tk = "*"
+canvasvg = "*"
+
+[requires]
+python_version = "2.7"

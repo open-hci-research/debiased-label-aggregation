@@ -1,0 +1,37 @@
+{'rand_seed': 123456, 'dataset_file': 'data/sketchy_dec6_dec13_peeks_updated.tsv', 'force_preprocessing': True, 'max_imbalance_ratio': 1.25, 'skip_singleton_votes': True, 'weight_user_votes': False, 'eq3': False, 'scale_features': True, 'xgboost_params': {'n_estimators': 500, 'max_depth': 10}, 'over_sampling': 'SMOTE', 'feature_selection': 'RFECV', 'date': '2021-12-14 18:11:04', 'time': 1639505464.3166454}
+2021-12-14 18:11:04,316 - INFO - Loading 1 .ndjson files ...
+2021-12-14 18:11:04,403 - INFO - Reading sketch votes from data/sketchy_dec6_dec13_peeks_updated.tsv ...
+2021-12-14 18:11:04,679 - INFO - Computing user voting behavior ...
+2021-12-14 18:11:04,679 - INFO - Computing class histogram ...
+2021-12-14 18:11:04,679 - INFO - Sketches with ratio 1.0 have 40 values. Max value will be capped to 50.0
+2021-12-14 18:11:04,862 - INFO - Processing dataset ...
+sample list length is 116
+samples length 116
+labels length 116
+X shape 1
+y shape 1
+2021-12-14 18:19:32,775 - INFO - Writing CSV files ...
+2021-12-14 18:19:32,779 - INFO - Whitening samples ...
+2021-12-14 18:19:32,783 - INFO - Computing model metrics ...
+2021-12-14 18:19:32,783 - INFO - Will use RFECV for feature selection
+2021-12-14 18:20:54,988 - INFO - Optimum number of features: 3
+Features kept are: ['hull_area', 'entropy', 'avg_dist']
+oversampling with smote
+before resampling (array([0, 1]), array([55, 37]))
+after resampling (array([0, 1]), array([55, 55]))
+oversampling with smote
+before resampling (array([0, 1]), array([52, 41]))
+after resampling (array([0, 1]), array([52, 52]))
+oversampling with smote
+before resampling (array([0, 1]), array([55, 38]))
+after resampling (array([0, 1]), array([55, 55]))
+oversampling with smote
+before resampling (array([0, 1]), array([57, 36]))
+after resampling (array([0, 1]), array([57, 57]))
+oversampling with smote
+before resampling (array([0, 1]), array([57, 36]))
+after resampling (array([0, 1]), array([57, 57]))
+ALL results, N=116 observations
+{'balanced_accuracy': 0.9857142857142858, 'accuracy': 0.9833333333333332, 'average_precision': 0.9666666666666668, 'precision': 0.9666666666666668, 'recall': 1.0, 'f1': 0.9818181818181818, 'f1_weighted': 0.9834498834498835, 'f1_micro': 0.9833333333333332, 'f1_macro': 0.9832167832167832, 'roc_auc': 0.9857142857142858, 'jaccard': 0.9666666666666668}
+
+2021-12-14 18:20:55,312 - INFO - All done!

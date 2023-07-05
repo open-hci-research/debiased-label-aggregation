@@ -1,0 +1,37 @@
+{'rand_seed': 123456, 'dataset_file': 'data/sketchy_fall2019_peekvotes_fmt_final.tsv', 'force_preprocessing': True, 'max_imbalance_ratio': 1.25, 'skip_singleton_votes': True, 'weight_user_votes': True, 'eq3': True, 'scale_features': True, 'xgboost_params': {'n_estimators': 500, 'max_depth': 10}, 'over_sampling': 'SMOTE', 'feature_selection': 'RFECV', 'date': '2021-12-14 18:33:42', 'time': 1639506822.5232418}
+2021-12-14 18:33:42,523 - INFO - Loading 1 .ndjson files ...
+2021-12-14 18:33:43,714 - INFO - Reading sketch votes from data/sketchy_fall2019_peekvotes_fmt_final.tsv ...
+2021-12-14 18:33:44,002 - INFO - Computing user voting behavior ...
+2021-12-14 18:33:44,002 - INFO - Computing class histogram ...
+2021-12-14 18:33:44,003 - INFO - Sketches with ratio 1.0 have 424 values. Max value will be capped to 530.0
+2021-12-14 18:33:46,591 - INFO - Processing dataset ...
+sample list length is 2071
+samples length 2059
+labels length 2059
+X shape 1
+y shape 1
+2021-12-14 21:04:03,352 - INFO - Writing CSV files ...
+2021-12-14 21:04:03,394 - INFO - Whitening samples ...
+2021-12-14 21:04:03,447 - INFO - Computing model metrics ...
+2021-12-14 21:04:03,447 - INFO - Will use RFECV for feature selection
+2021-12-14 21:05:34,511 - INFO - Optimum number of features: 21
+Features kept are: ['num_fit_strokes', 'sum_dist', 'sum_diff', 'sum_angle', 'sum_sq_angle', 'box_area', 'hull_area', 'aspect_ratio', 'entropy', 'box_length', 'box_angle', 'path_length', 'cosine_initial', 'sine_initial', 'cosine_final', 'sine_final', 'avg_dist', 'avg_angle', 'std_dist', 'std_diff', 'std_angle']
+oversampling with smote
+before resampling (array([0, 1]), array([1026,  621]))
+after resampling (array([0, 1]), array([1026, 1026]))
+oversampling with smote
+before resampling (array([0, 1]), array([1030,  617]))
+after resampling (array([0, 1]), array([1030, 1030]))
+oversampling with smote
+before resampling (array([0, 1]), array([1026,  621]))
+after resampling (array([0, 1]), array([1026, 1026]))
+oversampling with smote
+before resampling (array([0, 1]), array([1029,  618]))
+after resampling (array([0, 1]), array([1029, 1029]))
+oversampling with smote
+before resampling (array([0, 1]), array([1053,  595]))
+after resampling (array([0, 1]), array([1053, 1053]))
+ALL results, N=2059 observations
+{'balanced_accuracy': 0.8662266024213491, 'accuracy': 0.8752001984267592, 'average_precision': 0.7551991950006807, 'precision': 0.8329972258741918, 'recall': 0.8298723917542364, 'f1': 0.830698519162494, 'f1_weighted': 0.8751951909693002, 'f1_micro': 0.8752001984267592, 'f1_macro': 0.865842310372716, 'roc_auc': 0.8662266024213491, 'jaccard': 0.7121821424667786}
+
+2021-12-14 21:05:55,592 - INFO - All done!

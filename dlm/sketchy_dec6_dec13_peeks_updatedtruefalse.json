@@ -1,0 +1,9 @@
+{
+"dataset_file": "data/sketchy_dec6_dec13_peeks_updated.tsv",
+"weight_user_votes": true,
+"skip_singleton_votes": true,
+"xgboost_params": {"n_estimators": 500, "max_depth": 10},
+"force_preprocessing": true,
+"feature_selection": false,
+"eq3": false
+}
